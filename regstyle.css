@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.whole{
+    display: flex;
+}
+.content{
+    color: rgb(110, 3, 3);
+}
+.info{
+    height: 58vh;
+    width: 80vw;
+    margin:144px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    transition: margin-left .5s;
+    margin-left: 20px;
+}
+.firstdiv{
+    background-color: rgb(128, 236, 128);
+    font-family: 'abel', sanserif;
+    width: 400px;
+    height: 110vh;
+}
+.firstdiv nav{
+    padding: 45px;
+}
+.firstdiv nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+.firstdiv nav li a{
+    text-decoration: none;
+    color: rgb(110, 3, 3);
+}
+.formdiv{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    padding:0 200px;
+}
+.formdiv h1{
+    font-family: 'Abel',sans-serif;
+    /* text-align: center; */
+    /* padding-top: 5px;  */
+    font-size: 19px;
+    font-weight: bold;
+}
+.formdiv form div{
+    padding: 10px 0;
+}
+.formdiv form div input{
+    width: 16vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+.regimage img{
+    height: 58vh;
+    /* transition: margin-right .5s;
+    margin-right: 200px; */
+}
+#checkform{
+    flex-direction: row;
+}
+#checkform input{
+    width: 24px;
+    margin: 3px 0;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:#614124;
+    background-color:rgb(128, 236, 128);;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 3px;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    color: rgb(128, 236, 128);
+    background-color: #614124;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    display: flex;
+    align-items: right;
+    justify-content:flex-start;
+    height:100vh;
+    flex-direction: column;
+    padding-top: 138px;
+}
+.credit{
+    text-align: center;
+    color: rgb(110, 3, 3);
+    font-family: 'Roboto', sans-serif;
+  }
+.credit a{
+    text-decoration: none;
+    color:greenyellow;
+    font-weight: bold;
+  } 

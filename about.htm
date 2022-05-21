@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us</title>
+        <link rel="icon" href="fav.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="aboutstyles.css">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                border-color: #eee;
+            }
+            #hamburger-wrapper{
+                position: absolute;
+                right: 50px;
+                top:25px;
+                cursor: pointer;
+                z-index: 1;
+            }
+            .hamburger, .hamburger::before, .hamburger::after{
+                display: inline-block;
+                width: 30px;
+                height: 2px;
+                background-color: rgb(173, 237, 173);
+                transition: all 0.3s;
+            }
+            .hamburger{
+                position: relative;
+            }
+            .hamburger::before, .hamburger::after{
+                content: "";
+                position: absolute;
+            }
+            .hamburger::before{
+                transform: translateY(-5px);
+            }
+            .hamburger::after{
+               transform: translateY(-10px);
+            }
+            .navbar{
+                position: absolute;
+                right: 0;
+                width: 500px;
+                height: 100vh;
+                background-color: rgb(173, 237, 173);
+                clip-path: circle(0 at 100% 0);
+                transition: all 0.3s;
+            }
+            .nav-list{
+                position:absolute;
+                list-style: none;
+                right:180px;
+                top:40px;
+                transform: translateX(-300px) rotate(20deg);
+                opacity: 0;
+                transition: all 0.3s;
+                transition-delay:0.3s;
+            }
+            .nav-list li{
+                margin: 50px 0;
+                text-align: center;
+            }
+            .nav-list li a{
+                text-decoration: none;
+                color: #eee;
+                font-family: 'Roboto',sans-serif;
+                text-transform: uppercase;
+                padding: 10px;
+                transition: all 0.3s;
+            }
+            .nav-list li a:hover{
+                border-bottom: 1px solid #fff;
+            }
+            #hamburger-toggle{
+                visibility: hidden;
+            }
+            #hamburger-toggle:checked ~ .hamburger-wrapper .hamburger{
+                background-color: transparent;
+            }
+            #hamburger-toggle:checked ~ .hamburger-wrapper .hamburger::before{
+                transform: rotate(225deg);
+                background-color: #fff;
+            }
+            #hamburger-toggle:checked ~ .navbar{
+                clip-path: circle(500px at 100% 0);
+            }
+            #hamburger-toggle:checked ~ .navbar .nav-list{
+                transform: translateX(0);
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="hamburger-toggle">
+     <label class="hamburger-wrapper" for="hamburger-toggle">
+         <span class="hamburger"></span>
+     </label>
+     <nav class="navbar">
+         <ul class="nav-list">
+             <li><a href="main.html">home</a></li>
+             <li><a href="register.html">register</a></li>
+             <li><a href="contact.html">contact</a></li>
+             <li><a href="gallery.htm">gallery</a></li>
+         </ul>
+     </nav>
+        <section>
+            <div class = "image">
+               <img src="abimg.png">
+            </div>
+
+            <div class = "content">
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+                <p>I am a 19 year old who has a keen interest in all things plants. Register to get a free workshop! Hurry up offer valid till 31st May 2022.</p>
+                <ul class = "links">
+                    <li><a href = "gallery.htm">Gallery</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "register.html">Register</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href ="contact.html">contact</a></li>
+                </ul>
+                <ul class = "icons">
+                    <li>
+                        <i class = "fa fa-twitter"><a class="fa" href="" style="text-decoration: none;"></a></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-facebook"><a class="fa" href="" style="text-decoration: none;"></a></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-instagram"><a class="fa" href="https://www.instagram.com/v_for_plants/?igshid=YmMyMTA2M2Y=" style="text-decoration: none;"></a></i>
+                    
+                </ul>
+            </div>
+        </section><br><br>
+        <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="main.html">V For Plants</a></div>
+    </body>
+</html>

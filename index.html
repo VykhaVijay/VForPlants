@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v for plants</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <!-- cdn font awesome -->
+    <script src="https://kit.fontawesome.com/c65732ff7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c65732ff7d.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="icon" href="fav.png">
+</head>
+     <body >
+        
+    <div class="navigate">
+        <ul>
+            <li>
+                <a href="register.html">
+                    <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                    <span class="title">Register</span>
+                </a>
+            </li>
+            <li>
+                <a href="learn.html">
+                    <span class="icon"><i class="fa fa-leanpub" aria-hidden="true"></i></span>
+                    <span class="title">Learn</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <span class="icon"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.htm">
+                    <span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="whole">
+    <div class="content">
+        <div class="info">
+            <div class="infoword">
+                <div class="hi"><p>hello, I am</p> </div>
+                <div class="site"><p id="typing">Vykha Vijay</p></div>
+                <div class="intro"><p>a plant enthusiast</p></div>
+                <div class="introduction">who is on mission to help people greenify their spaces and is keen to share planty knowledge with the world.</div>
+                <div class="button">
+                    <button class="btn"><a href="https://www.instagram.com/v_for_plants/?hl=en" style="text-decoration:none;">Instagram</a></button>
+                    <button class="btn"><a href="gallery.htm" style="text-decoration:none;">Gallery</a></button>
+                </div>
+            </div>
+            <div class="infopic">
+                <img src="plants.webp" alt="plant pic">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="toggle" onclick="toggleMenu()"></div>
+<script type="text/javascript">
+  function toggleMenu(){
+      let navigate = document.querySelector('.navigate');
+      let toggle = document.querySelector('.toggle');
+      navigate.classList.toggle('active');
+      toggle.classList.toggle('active');
+  }
+</script>
+<div class="credit">Made with <span style="color:tomato">❤</span> by <a href="index.html">V For Plants</a></div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    height:100vh;
+    flex-direction: column;
+}
+.menu{
+    list-style: none;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.menu .list-item{
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+    margin: 4px 0;
+}
+.list-item .fa{
+    text-align: center;
+    line-height: 40px;
+}
+.list-item a span{
+    width: 0;
+    left: 40px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6;
+    white-space: nowrap;
+    line-height: 40px;
+    transition: 0.25s;
+}
+.list-item a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    color: aquamarine;
+    position: relative;
+}
+.list-item  a:hover span{
+    width: auto;
+    padding: 0 20px;
+    overflow: visible;
+}
+.home, .home span{
+    background: rgb(1, 36, 1);
+}
+.about, .about span{
+    background: rgb(3, 106, 3);
+}
+.home, .home span{
+    background: rgb(8, 165, 8);
+}
+.contact, .contact span{
+    background: rgb(9, 243, 9);
+}

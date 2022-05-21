@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.whole{
+    display: flex;
+}
+.firstdiv{
+    /* background-color: rgb(85, 173, 173); */
+    background-color: rgb(128, 236, 128);
+    font-family: abel, sans-serif;
+    /* width: 434px; */
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+/* .firstdivison{
+    transform: translate(-400px,0px);
+    /* position: absolute; 
+} */
+.firstdiv nav{
+    padding: 45px;
+}
+.firstdiv nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+.firstdiv nav li a{
+    text-decoration: none;
+    color: rgb(110, 3, 3);
+}
+.content{
+    width: 90vw;
+}
+a{
+    color: rgb(126, 39, 39);
+}
+a:visited{
+    color: #fff;
+}
+.info{
+    height: 58vh;
+    width: 80vw;
+    margin:144px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    transition: margin-left .5s;
+    margin-left: 98px;
+}
+.infopic img{
+    height: 58vh;
+}
+.infoword{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto',sans-serif;
+    color: rgb(110, 3, 3);
+    
+}
+.hi{
+    font-size: 64px; 
+} 
+
+.intro{
+    font-size: 36px;
+}
+.introduction{
+    font-size: 18px;
+    font-weight:600;
+    margin-top: 22px;
+}
+.button{
+    margin-top: 34px;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:#614124;
+    background-color:rgb(128, 236, 128);;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    color: rgb(128, 236, 128);;
+    background-color: #614124;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+#cross{
+    margin-left: 140px;
+}
+.navigate{
+    position: fixed;
+    width: 50px;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: rgb(128, 236, 128);
+  
+}
+.navigate:hover, .navigate.active{
+    width: 160px;
+}
+.title{
+    font-family: 'Abel',sans-serif;
+}
+.navigate ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 50px;
+}
+.navigate ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigate ul li :hover{
+    background-color: rgb(207, 248, 235);
+}
+
+.navigate ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+.navigate ul li a .icon{
+    position: relative;
+    display: flex;
+    min-height: 60px;
+    padding-left:0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 30px;
+}
+.navigate ul li a .icon .fa{
+    font-size: 24px;
+    padding-top: 17px;
+    /* padding-left:0px; */
+    
+}
+.navigate ul li a .title{
+    position: relative;
+    display: flex;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    width: 50px;
+    height: 40px;
+    background-color: rgb(190, 128, 47);
+    padding-bottom:20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.toggle.active{
+    background-color: aqua;
+}
+.toggle:before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle.active:before{
+    content: '\f00d';
+}
+@media (max-width: 767px)
+{
+    .toggle{
+        visibility: visible;
+    }
+    .navigate
+    {
+        left: -60px;
+    }
+    .navigate.active
+    {
+        left: 0px;
+        width: 100%;
+    }
+}
+.site{
+    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+.credit{
+    text-align: center;
+    color: rgb(110, 3, 3);
+    font-family: 'Roboto', sans-serif;
+  }
+.credit a{
+    text-decoration: none;
+    color:greenyellow;
+    font-weight: bold;
+  } 
+  

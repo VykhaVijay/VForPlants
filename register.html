@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="fav.png">
+    <!-- css -->
+    <link rel="stylesheet" href="regstyle.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border-color: #eee;
+        }
+        #hamburger-wrapper{
+            position: absolute;
+            right: 50px;
+            top:25px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .hamburger, .hamburger::before, .hamburger::after{
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            background-color: rgb(173, 237, 173);
+            transition: all 0.3s;
+        }
+        .hamburger{
+            position: relative;
+        }
+        .hamburger::before, .hamburger::after{
+            content: "";
+            position: absolute;
+        }
+        .hamburger::before{
+            transform: translateY(-5px);
+        }
+        .hamburger::after{
+           transform: translateY(-10px);
+        }
+        .navbar{
+            position: absolute;
+            right: 0;
+            width: 500px;
+            height: 100vh;
+            background-color: rgb(173, 237, 173);
+            clip-path: circle(0 at 100% 0);
+            transition: all 0.3s;
+        }
+        .nav-list{
+            position:absolute;
+            list-style: none;
+            right:180px;
+            top:40px;
+            transform: translateX(-300px) rotate(20deg);
+            opacity: 0;
+            transition: all 0.3s;
+            transition-delay:0.3s;
+        }
+        .nav-list li{
+            margin: 50px 0;
+            text-align: center;
+        }
+        .nav-list li a{
+            text-decoration: none;
+            color: #eee;
+            font-family: 'Roboto',sans-serif;
+            text-transform: uppercase;
+            padding: 10px;
+            transition: all 0.3s;
+        }
+        .nav-list li a:hover{
+            border-bottom: 1px solid #fff;
+        }
+        #hamburger-toggle{
+            visibility: hidden;
+        }
+        #hamburger-toggle:checked ~ .hamburger-wrapper .hamburger{
+            background-color: transparent;
+        }
+        #hamburger-toggle:checked ~ .hamburger-wrapper .hamburger::before{
+            transform: rotate(225deg);
+            background-color: #fff;
+        }
+        #hamburger-toggle:checked ~ .navbar{
+            clip-path: circle(500px at 100% 0);
+        }
+        #hamburger-toggle:checked ~ .navbar .nav-list{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole">
+    <input type="checkbox" id="hamburger-toggle">
+     <label class="hamburger-wrapper" for="hamburger-toggle">
+         <span class="hamburger"></span>
+     </label>
+     <nav class="navbar">
+         <ul class="nav-list">
+             <li><a href="main.html">home</a></li>
+             <li><a href="about.htm">about</a></li>
+             <li><a href="contact.html">contact</a></li>
+             <li><a href="gallery.htm">gallery</a></li>
+         </ul>
+     </nav>
+
+    <div class="content">
+        <div class="info">
+        <div class="formdiv">
+            <h1>Register for online sessions which will make you plant pro</h1>
+            <form action="https://formspree.io/f/mnqwlolg" method="POST">
+                <br>
+                <div>
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Full Name" autocomplete="off" required>
+                </div>
+                <div>
+                    <label for="regemail">E-mail</label>
+                    <br>
+                    <input type="email" id="regemail" name="email" placeholder="Enter your e-mail"  autocomplete="off" required>
+                </div>
+                <div>
+                    <label for="regphone">Phone no</label>
+                    <br>
+                    <input type="phone" name="phone" id="regphone" placeholder="Enter your phone no"  autocomplete="off">
+                </div>
+                <div id="checkform">
+                    <input type="checkbox" name="box">
+                    <label>I want to attend these sessions</label>
+                </div>
+                <div>
+                <label>Any specific query?</label>
+                <br>
+                <textarea rows="3" cols="20" placeholder="How can we help you?" name="message"  autocomplete="off"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    <div class="regimage">
+        <img src="monstera.webp" alt="">
+    </div>
+</div>
+  </div>
+  </div>
+  <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="main.html">V For Plants</a></div>
+</body>
+</html>
